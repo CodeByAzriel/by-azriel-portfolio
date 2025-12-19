@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>By Azriel | Home</title>
+  
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+
+  <!-- AOS Animation CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <style>
+    :root {
+      --primary-pink: #f9d5e5;
+      --accent-pink: #ff7eb9;
+      --text-dark: #3b2e2e;
+      --bg-light: #fff0f6;
+    }
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+      margin: 0;
+      background-color: var(--bg-light);
+      color: var(--text-dark);
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    header {
+      background-color: var(--primary-pink);
+      padding: 15px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 2px 10px rgba(247, 161, 196, 0.4);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    header img {
+      height: 50px;
+    }
+
+    header div h1 {
+      font-family: 'Playfair Display', serif;
+      margin: 0;
+      font-size: 1.8rem;
+      letter-spacing: 1px;
+    }
+
+    nav a {
+      color: var(--text-dark);
+      margin: 0 12px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: var(--accent-pink);
+    }
+
+    section {
+      max-width: 900px;
+      background-color: white;
+      margin: 50px auto;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(247, 161, 196, 0.2);
+    }
+
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      color: var(--accent-pink);
+      margin-bottom: 20px;
+    }
+
+    p {
+      line-height: 1.7;
+      font-size: 1.1rem;
+    }
+
+    .intro-section {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .intro-section img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    #typed-text {
+      font-weight: bold;
+      font-size: 1.4rem;
+      color: var(--accent-pink);
+      display: block;
+      margin-top: 10px;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    ul li::before {
+      content: "• ";
+      color: var(--accent-pink);
+      font-weight: bold;
+    }
+
+    .projects-preview div {
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .projects-preview a {
+      color: var(--accent-pink);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .projects-preview a:hover {
+      text-decoration: underline;
+    }
+
+    .cta-section {
+      text-align: center;
+      background-color: var(--primary-pink);
+      padding: 40px;
+      margin-top: 50px;
+      border-radius: 12px;
+    }
+
+    .cta-section a {
+      background: var(--accent-pink);
+      color: white;
+      padding: 10px 20px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+      margin-top: 15px;
+      transition: background 0.3s;
+    }
+
+    .cta-section a:hover {
+      background: #e84d8a;
+    }
+
+    footer {
+      background-color: var(--primary-pink);
+      color: var(--text-dark);
+      text-align: center;
+      padding: 20px;
+      font-size: 0.85rem;
+      margin-top: auto;
+      border-top: 1px solid #e8b2c5;
+    }
+
+    /* Particles background */
+    #particles-js {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      top: 0;
+      left: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Background Animation -->
+  <div id="particles-js"></div>
+
+  <header>
+    <div style="display: flex; align-items: center;">
+      <img src="images/by-azriel-logo.png" alt="By Azriel Logo" id="logo-img">
+      <div style="margin-left: 15px;">
+        <h1>By Azriel</h1>
+      </div>
+    </div>
+    <nav>
+     <a href="index.html"aria-current="page" style="color: var(--accent-pink); font-weight: 700;">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="certificates.html">Certificates</a>
+      <a href="skills.html">Skills</a>
+      <a href="cv.html">CV & Resume</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="intro-section" data-aos="fade-up">
+    <img src="images/profile.jpg" alt="Ria Azriel">
+    <div>
+      <h2>Hi, I'm Ria Azriel Bhugwandeen</h2>
+      <p>
+        I'm a Software Engineering student who loves crafting web experiences, building purposeful digital projects, and exploring the world of microcontrollers and embedded systems. Through <strong>By Azriel</strong>, I bring my creativity and coding skills together to create meaningful impact.
+      </p> 
+      <span id="typed-text"></span>
+    </div>
+  </section>
+
+  <section data-aos="fade-right">
+    <h2>What I Do</h2>
+    <ul>
+      <li>Frontend Web Development (HTML, CSS, JavaScript)</li>
+      <li>Backend Web Development</li>
+      <li>Mobile Development</li>
+      <li>UI/UX Design & Prototyping</li>
+      <li>Responsive Websites & Single Page Apps</li>
+      <li>Microcontroller Projects & Embedded Systems Experiments</li>
+      <li>Creative Passion Projects that blend tech and design</li>
+    </ul>
+  </section>
+
+  <section data-aos="fade-left">
+    <h2>Featured Projects</h2>
+    <div class="projects-preview">
+      <div>
+        <h3>📚 Books by Azriel</h3>
+        <p>A simple, user-friendly online bookstore designed for fellow readers and hobbyists.</p>
+        <a href="https://booksbyazriel.great-site.net/?i=1" target="_blank">View Project</a>
+      </div>
+      <div>
+        <h3>✈️ Wanderlust By Azriel</h3>
+        <p>A vibrant, responsive travel website built to showcase beautiful destinations.</p>
+        <a href="https://wanderlustbyazriel.netlify.app" target="_blank">View Project</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section" data-aos="zoom-in-up">
+    <h2>Let's Work Together</h2>
+    <p>Whether it's a creative project, collaboration, or freelance work — I'm always open to new opportunities!</p>
+    <a href="contact.html">Get In Touch</a>
+  </section>
+
+  <footer>
+    <p>© 2025 By Azriel — Designed & Developed by Ria Azriel Bhugwandeen</p>
+  </footer>
+
+  <!-- JS Libraries -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+  <script>
+    // Typed text effect
+    const typedText = document.getElementById('typed-text');
+    const intro = `Passionate about coding, designing, and experimenting with tech.`;
+    let index = 0;
+
+    function typeText() {
+      if (index < intro.length) {
+        typedText.textContent += intro.charAt(index);
+        index++;
+        setTimeout(typeText, 40);
+      }
+    }
+
+    window.addEventListener('load', typeText);
+
+    // AOS init
+    AOS.init();
+
+    // GSAP logo entrance
+    gsap.from("#logo-img", {
+      duration: 1,
+      y: -50,
+      opacity: 0,
+      ease: "bounce.out"
+    });
+
+    // Particles config
+    particlesJS("particles-js", {
+      particles: {
+        number: { value: 60 },
+        size: { value: 3 },
+        color: { value: "#ff7eb9" },
+        line_linked: {
+          enable: true,
+          distance: 120,
+          color: "#ffb3d9",
+          opacity: 0.5
+        },
+        move: {
+          speed: 1.5
+        }
+      },
+      interactivity: {
+        events: {
+          onhover: { enable: true, mode: "repulse" }
+        }
+      }
+    });
+  </script>
+</body>
+</html>

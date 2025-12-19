@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>By Azriel | Certificates & Awards</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --primary-pink: #f9d5e5;
+      --accent-pink: #ff7eb9;
+      --text-dark: #3b2e2e;
+      --bg-light: #fff0f6;
+    }
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+      margin: 0;
+      background-color: var(--bg-light);
+      color: var(--text-dark);
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: var(--primary-pink);
+      padding: 15px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 2px 10px rgba(247, 161, 196, 0.4);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    header img {
+      height: 50px;
+    }
+
+    header div h1 {
+      font-family: 'Playfair Display', serif;
+      margin: 0;
+      font-size: 1.8rem;
+      letter-spacing: 1px;
+    }
+
+    header div p {
+      margin: 0;
+      font-size: 0.9rem;
+      font-style: italic;
+    }
+
+    nav a {
+      color: var(--text-dark);
+      margin: 0 12px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: var(--accent-pink);
+    }
+
+    main {
+      display: flex;
+      gap: 40px;
+      max-width: 1200px;
+      margin: 50px auto;
+      padding: 0 20px;
+    }
+
+    .column {
+      flex: 1;
+    }
+
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      color: var(--accent-pink);
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .certificate, .award {
+      margin-bottom: 25px;
+      padding: 20px;
+      border-radius: 10px;
+      background-color: white;
+      box-shadow: 0 6px 15px rgba(247, 161, 196, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+
+    .certificate:hover, .award:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 25px rgba(255, 126, 185, 0.3);
+      background-color: #fff0f6;
+    }
+
+    .cert-title, .award-title {
+      font-weight: 700;
+      font-size: 1.3rem;
+      margin: 0 0 5px 0;
+    }
+
+    .cert-subtitle, .award-subtitle {
+      font-style: italic;
+      margin: 0 0 8px 0;
+      color: #6a495a;
+    }
+
+    .cert-issuer, .award-issuer {
+      margin: 0 0 12px 0;
+      color: #4a2a41;
+    }
+
+    a.cert-link, a.award-link {
+      color: var(--accent-pink);
+      font-weight: bold;
+      text-decoration: none;
+      transition: text-decoration 0.3s ease;
+    }
+
+    a.cert-link:hover, a.award-link:hover {
+      text-decoration: underline;
+    }
+
+    .award img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 8px;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background-color: var(--primary-pink);
+      color: var(--text-dark);
+      text-align: center;
+      padding: 20px;
+      font-size: 0.85rem;
+      margin-top: auto;
+      border-top: 1px solid #e8b2c5;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div style="display: flex; align-items: center;">
+    <img src="images/by-azriel-logo.png" alt="By Azriel Logo" />
+    <div style="margin-left: 15px;">
+      <h1>By Azriel</h1>
+      <p>Created by Ria Azriel Bhugwandeen</p>
+    </div>
+  </div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="certificates.html" aria-current="page" style="color: var(--accent-pink); font-weight: 700;">Certificates</a>
+    <a href="skills.html">Skills</a>
+    <a href="cv.html">CV & Resume</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<main>
+
+  <!-- Left Column: My Certificates -->
+  <div class="column">
+    <h2>My Certificates</h2>
+
+    <div class="certificate">
+      <p class="cert-title">Golden Key International Honour Society</p>
+      <p class="cert-subtitle">Academic Excellence</p>
+      <p class="cert-issuer">Issued by Golden Key International Honour Society</p>
+      <a href="certs/golden key.pdf" target="_blank" class="cert-link">View Certificate</a>
+    </div>
+
+    <div class="certificate">
+      <p class="cert-title">Emotional Intelligence</p>
+      <p class="cert-subtitle">Essential Human Skills in the Workplace — Humanities</p>
+      <p class="cert-issuer">Issued by NextGen Mastery Eduvos</p>
+      <a href="certs/NextGen Programme.pdf" target="_blank" class="cert-link">View Certificate</a>
+    </div>
+
+    <div class="certificate">
+      <p class="cert-title">Professional Communication and Presentation Skills</p>
+      <p class="cert-subtitle">Workplace Communication — Humanities</p>
+      <p class="cert-issuer">Issued by NextGen Mastery Eduvos</p>
+      <a href="certs/NextGen_PRO_.pdf" target="_blank" class="cert-link">View Certificate</a>
+    </div>
+
+    <div class="certificate">
+      <p class="cert-title">Digital Facial Imaging in the Era of AI</p>
+      <p class="cert-subtitle">Applied Science</p>
+      <p class="cert-issuer">Issued by NextGen Mastery Eduvos</p>
+      <a href="certs/Ria Bhugwandeen Digital facial imaging in the era of AI.pdf" target="_blank" class="cert-link">View Certificate</a>
+    </div>
+
+    <div class="certificate">
+      <p class="cert-title">Legal Aspects of Entrepreneurship and Business Startups</p>
+      <p class="cert-subtitle">Law</p>
+      <p class="cert-issuer">Issued by NextGen Mastery Eduvos</p>
+      <a href="certs/Ria Bhugwandeen,Legal aspects.pdf" target="_blank" class="cert-link">View Certificate</a>
+    </div>
+
+    <div class="certificate">
+      <p class="cert-title">Financial Literacy and Personal Finance</p>
+      <p class="cert-subtitle">Commerce</p>
+      <p class="cert-issuer">Issued by NextGen Mastery Eduvos</p>
+      <a href="certs/Ria Bhugwandeen_Financial Literacy and Personal Finance.pdf" target="_blank" class="cert-link">View Certificate</a>
+    </div>
+
+    <div class="certificate">
+      <p class="cert-title">Beyond the Myths: Understanding Plant Genetic Transformation and GMOs</p>
+      <p class="cert-subtitle">Applied Science</p>
+      <p class="cert-issuer">Issued by NextGen Mastery Eduvos</p>
+      <a href="certs/Ria Bhugwandeen Beyond the Myths  Understanding Plant Genetic Transformation and GMOs.pdf" target="_blank" class="cert-link">View Certificate</a>
+    </div>
+  </div>
+
+  <!-- Right Column: University Awards -->
+  <div class="column">
+    <h2>University Academic Awards</h2>
+
+    <div class="award">
+      <img src="images/award_1.jpg" alt="Top Achiever Year 1">
+      <p class="award-title">Top Achiever – Year 1</p>
+      <p class="award-issuer">Eduvos Durban Campus</p>
+      <a href="certs/award1.pdf" target="_blank" class="award-link">View Certificate</a>
+    </div>
+
+    <div class="award">
+      <img src="images/award_2.jpg" alt="Top Achiever Year 2">
+      <p class="award-title">Top Achiever – Year 2</p>
+      <p class="award-issuer">Eduvos Durban Campus</p>
+      <a href="certs/award2.pdf" target="_blank" class="award-link">View Certificate</a>
+    </div>
+
+    <div class="award">
+      <img src="images/award_3.jpg" alt="Top Achiever Year 3">
+      <p class="award-title">Top Achiever – Year 3</p>
+      <p class="award-subtitle">Placeholder description</p>
+      <p class="award-issuer">Eduvos Durban Campus</p>
+      <a href="certs/award3.pdf" target="_blank" class="award-link">View Certificate</a>
+    </div>
+
+  </div>
+
+</main>
+
+<footer>
+  <p>© 2025 By Azriel — Designed & Developed by Ria Azriel Bhugwandeen</p>
+</footer>
+
+</body>
+</html>

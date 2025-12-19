@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>By Azriel | Skills</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --primary-pink: #f9d5e5;
+      --accent-pink: #ff7eb9;
+      --text-dark: #3b2e2e;
+      --bg-light: #fff0f6;
+    }
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+      margin: 0;
+      background-color: var(--bg-light);
+      color: var(--text-dark);
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: var(--primary-pink);
+      padding: 15px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 2px 10px rgba(247, 161, 196, 0.4);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    header img {
+      height: 50px;
+    }
+
+    header div h1 {
+      font-family: 'Playfair Display', serif;
+      margin: 0;
+      font-size: 1.8rem;
+      letter-spacing: 1px;
+    }
+
+    header div p {
+      margin: 0;
+      font-size: 0.9rem;
+      font-style: italic;
+    }
+
+    nav a {
+      color: var(--text-dark);
+      margin: 0 12px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: var(--accent-pink);
+    }
+
+    section {
+      max-width: 900px;
+      background-color: white;
+      margin: 50px auto;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(247, 161, 196, 0.2);
+      font-size: 1.1rem;
+      line-height: 1.7;
+    }
+
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      color: var(--accent-pink);
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .skill-card {
+      padding: 20px;
+      border: 1px solid #e8b2c5;
+      border-radius: 12px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: default;
+    }
+
+    .skill-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 20px rgba(255, 126, 185, 0.3);
+      background-color: #fff0f6;
+    }
+
+    .skill-card img {
+      width: 50px;
+      height: 50px;
+      object-fit: contain;
+      margin-bottom: 12px;
+    }
+
+    .skill-card h3 {
+      margin-top: 0;
+      color: var(--accent-pink);
+      font-size: 1.2rem;
+    }
+
+    footer {
+      background-color: var(--primary-pink);
+      color: var(--text-dark);
+      text-align: center;
+      padding: 20px;
+      font-size: 0.85rem;
+      margin-top: auto;
+      border-top: 1px solid #e8b2c5;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div style="display: flex; align-items: center;">
+    <img src="images/by-azriel-logo.png" alt="By Azriel Logo" />
+    <div style="margin-left: 15px;">
+      <h1>By Azriel</h1>
+      <p>Created by Ria Azriel Bhugwandeen</p>
+    </div>
+  </div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="certificates.html">Certificates</a>
+    <a href="skills.html" aria-current="page" style="color: var(--accent-pink); font-weight: 700;">Skills</a>
+    <a href="cv.html">CV & Resume</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section>
+  <h2>My Skills</h2>
+
+  <div class="skills-grid">
+    <div class="skill-card">
+      <img src="images/python.png" alt="Python Icon">
+      <h3>Python</h3>
+      <p>Data handling, automation, and backend development.</p>
+    </div>
+    <div class="skill-card">
+      <img src="images/java.png" alt="Java Icon">
+      <h3>Java</h3>
+      <p>Android development and object-oriented programming.</p>
+    </div>
+    <div class="skill-card">
+      <img src="images/html.png" alt="HTML Icon">
+      <h3>HTML</h3>
+      <p>Markup language for structuring web content.</p>
+    </div>
+    <div class="skill-card">
+      <img src="images/css.png" alt="CSS Icon">
+      <h3>CSS</h3>
+      <p>Styling and responsive web design.</p>
+    </div>
+    <div class="skill-card">
+      <img src="images/javascript.png" alt="JavaScript Icon">
+      <h3>JavaScript</h3>
+      <p>Frontend interactivity and dynamic websites.</p>
+    </div>
+    <div class="skill-card">
+      <img src="images/php.png" alt="PHP Icon">
+      <h3>PHP</h3>
+      <p>Server-side scripting and web application development.</p>
+    </div>
+    <div class="skill-card">
+      <img src="images/sql.png" alt="SQL Icon">
+      <h3>SQL</h3>
+      <p>Database design and queries for applications.</p>
+    </div>
+    <div class="skill-card">
+      <img src="images/cpp.png" alt="C++ Icon">
+      <h3>C++</h3>
+      <p>Object-oriented programming and systems development.</p>
+    </div>
+    <div class="skill-card">
+      <img src="images/network.png" alt="Networking Icon">
+      <h3>Networking</h3>
+      <p>Network setup, protocols, and connectivity.</p>
+    </div>
+    <div class="skill-card">
+      <img src="images/maintenance.png" alt="IT Maintenance Icon">
+      <h3>IT Maintenance</h3>
+      <p>System administration, OS concepts, and troubleshooting.</p>
+    </div>
+  </div>
+</section>
+
+
+
+<footer>
+  <p>© 2025 By Azriel — Designed & Developed by Ria Azriel Bhugwandeen</p>
+</footer>
+
+</body>
+</html>

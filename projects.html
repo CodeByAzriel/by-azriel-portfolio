@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>By Azriel | Projects</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-pink: #f9d5e5;
+      --accent-pink: #ff7eb9;
+      --text-dark: #3b2e2e;
+      --bg-light: #fff0f6;
+    }
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+      margin: 0;
+      background-color: var(--bg-light);
+      color: var(--text-dark);
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: var(--primary-pink);
+      padding: 15px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 2px 10px rgba(247, 161, 196, 0.4);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    header img {
+      height: 50px;
+    }
+
+    header div h1 {
+      font-family: 'Playfair Display', serif;
+      margin: 0;
+      font-size: 1.8rem;
+      letter-spacing: 1px;
+    }
+
+    header div p {
+      margin: 0;
+      font-size: 0.9rem;
+      font-style: italic;
+    }
+
+    nav a {
+      color: var(--text-dark);
+      margin: 0 12px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: var(--accent-pink);
+    }
+
+    main {
+      max-width: 900px;
+      background-color: white;
+      margin: 50px auto;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(247, 161, 196, 0.2);
+      flex-grow: 1;
+    }
+
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      color: var(--accent-pink);
+      margin-bottom: 20px;
+    }
+
+    .project-card {
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #ddd;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    .project-card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+      color: var(--accent-pink);
+    }
+
+    .project-card p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    .project-card a {
+      display: inline-block;
+      margin-top: 10px;
+      background: var(--accent-pink);
+      color: white;
+      padding: 8px 16px;
+      border-radius: 20px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .project-card a:hover {
+      background: #e84d8a;
+    }
+
+    footer {
+      background-color: var(--primary-pink);
+      color: var(--text-dark);
+      text-align: center;
+      padding: 20px;
+      font-size: 0.85rem;
+      margin-top: auto;
+      border-top: 1px solid #e8b2c5;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div style="display: flex; align-items: center;">
+      <img src="images/by-azriel-logo.png" alt="By Azriel Logo" />
+      <div style="margin-left: 15px;">
+        <h1>By Azriel</h1>
+        <p>Created by Ria Azriel Bhugwandeen</p>
+      </div>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html" aria-current="page" style="color: var(--accent-pink); font-weight: 700;">Projects</a>
+      <a href="certificates.html">Certificates</a>
+      <a href="skills.html">Skills</a>
+      <a href="cv.html">CV & Resume</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>My Projects</h2>
+
+    <div class="project-card">
+      <h3>📚 Books by Azriel</h3>
+      <p>A simple, user-friendly online bookstore designed for fellow readers and hobbyists. Built with HTML, CSS, and PHP — this project focuses on accessibility, clean design, and functionality.</p>
+      <a href="https://booksbyazriel.great-site.net/?i=1" target="_blank" rel="noopener noreferrer">View Project</a>
+    </div>
+
+    <div class="project-card">
+      <h3>✈️ Wanderlust By Azriel</h3>
+      <p>This is a vibrant, responsive travel website built to showcase beautiful destinations and engage users with interactive elements and smooth UI transitions. Developed with modern frontend technologies, it highlights my skills in creating dynamic and attractive web interfaces.</p>
+      <a href="https://wanderlustbyazriel.netlify.app" target="_blank" rel="noopener noreferrer">View Project</a>
+    </div>
+
+   <div class="project-card">
+  <h3>🚀 Hackjam Project Lead – CampusConnect</h3>
+  <p>Led the development of <a href="https://campusconnect.gamer.gd" target="_blank" rel="noopener noreferrer">CampusConnect</a>, a web platform connecting students on campus. Oversaw the team, coordinated tasks, and ensured timely delivery during the hackjam event.</p>
+  <p>Technologies: Python, JavaScript, HTML/CSS, and WebSocket integration for live interactions.</p>
+  <p><em>Demonstrates leadership, technical execution, and hands-on project management.</em></p>
+</div>
+
+
+  </main>
+
+  <footer>
+    <p>© 2025 By Azriel — Designed & Developed by Ria Azriel Bhugwandeen</p>
+  </footer>
+
+</body>
+</html>
